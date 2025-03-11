@@ -56,7 +56,7 @@ public class ProductController {
     @PreAuthorize("hasAnyRole('MERCHANT')")
     public ResponseEntity<String> deleteById(@PathVariable String id) {
         productService.deleteById(id);
-        return ResponseEntity.ok(ApiBash.SUCCESS_DELETE_CUSTOMER);
+        return ResponseEntity.ok("Successfully delete product");
     }
 
     @GetMapping

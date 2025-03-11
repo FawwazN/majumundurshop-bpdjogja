@@ -32,7 +32,6 @@ public class CustomerController {
 //    }
 
     @PostMapping(consumes = {"multipart/form-data"})
-    @PreAuthorize("hasAnyRole('MERCHANT')")
     public ResponseEntity<CustomerResponse> createCustomer(
             @RequestParam("name") String name,
             @RequestParam("address") String address,
@@ -66,13 +65,11 @@ public class CustomerController {
     public List<Customer> getAllCustomers(
             @RequestParam(name = "name" , required = false) String name,
             @RequestParam(name = "mobilePhone" , required = false) String phoneNumber,
-            @RequestParam(name = "birthDate" , required = false) String birthDate,
             @RequestParam(name = "status" , required = false) Boolean status
     ) {
         SearchCustomerRequest request =  SearchCustomerRequest.builder()
                 .name(name)
                 .mobilePhoneNUmber(phoneNumber)
-                .birthDate(birthDate)
                 .status(status)
                 .build();
         return customerService.getAll(request);

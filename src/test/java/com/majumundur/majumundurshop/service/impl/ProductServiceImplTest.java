@@ -13,7 +13,6 @@ import com.majumundur.majumundurshop.entity.Product;
 import com.majumundur.majumundurshop.model.request.NewProductRequest;
 import com.majumundur.majumundurshop.model.request.SearchProductRequest;
 import com.majumundur.majumundurshop.repository.ProductRepository;
-import com.majumundur.majumundurshop.service.impl.ProductServiceImpl;
 
 import java.util.List;
 import java.util.Optional;
