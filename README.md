@@ -4,6 +4,7 @@ Maju Mundur is clothing market place to connect multiple merchant and customer. 
 This program were made using Spring Boot (Java-based REST API).
 
 Before turning on the API, make sure to turn on the ```redis-server``` first in Linux / WSL.
+
 Run through ```src\main\java\com\majumundur\majumundurshop\MajuMundurApplication.java``` with Java.
 
 ## Entity
