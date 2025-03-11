@@ -62,7 +62,7 @@ public class TransactionDetail {
 ```
 
 Produced database scheme
-![alt text](assets\erd.jpg "Database Schema Image")
+![alt text](assets/erd.jpg "Database Schema Image")
 
 ## API Documentation
 
